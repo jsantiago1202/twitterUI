@@ -1,0 +1,275 @@
+@import "./reset";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: $extraExtraLightGray;
+}
+.container {
+  padding: 10px;
+  height: 100vh;
+
+  width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  .sideNav {
+    text-align: center;
+    width: 120px;
+    padding: 10px;
+    border-radius: 40px;
+    margin: 5px;
+    background-color: $blue;
+    color: $extraExtraLightGray;
+
+    i {
+      display: block;
+      padding: 10px;
+      font-size: 30px;
+      border-radius: 20px;
+      margin: 20px 0px;
+      &:hover {
+        background-color: $hover;
+      }
+    }
+  }
+  .center {
+    width: 600px;
+    margin: 5px;
+    .tweetBox {
+      -webkit-box-shadow: 0px 20px 21px -21px rgba(20, 23, 26, 0.41);
+      -moz-box-shadow: 0px 20px 21px -21px rgba(20, 23, 26, 0.41);
+      box-shadow: 0px 20px 21px -21px rgba(20, 23, 26, 0.41);
+      border-radius: 40px;
+      padding: 10px;
+
+      background-color: $white;
+      .tweetBoxTextArea {
+        justify-content: center;
+        display: flex;
+        .userImage {
+          display: flex;
+          img {
+            width: 50px;
+            margin: auto 0;
+            border-radius: 100%;
+          }
+        }
+        .tweetInput {
+          textarea {
+            resize: none;
+            width: 500px;
+            padding: 10px;
+            height: 75px;
+            font-size: 20px;
+            margin: 10px 10px;
+            border: none;
+          }
+        }
+      }
+      .tweetBoxNavigation {
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        .tweetBoxNavigationIcons {
+          margin: auto 0;
+          i {
+            margin: 0 10px;
+            color: $lightGray;
+            font-size: 20px;
+            &:hover {
+              color: $blue;
+            }
+          }
+        }
+        .tweetBoxNavigationButton {
+          button {
+            background-color: $blue;
+            border: none;
+            width: 100px;
+            height: 40px;
+            color: $extraExtraLightGray;
+            font-weight: 700;
+            border-radius: 10px;
+            &:hover {
+              background-color: $hover;
+            }
+          }
+        }
+      }
+    }
+    .divisionText {
+      margin: 15px 10px;
+      p {
+        color: $black;
+        font-weight: 700;
+      }
+    }
+    .showRecentTweet {
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: $white;
+      border-radius: 40px;
+      -webkit-box-shadow: 0px 20px 21px -21px rgba(20, 23, 26, 0.41);
+      -moz-box-shadow: 0px 20px 21px -21px rgba(20, 23, 26, 0.41);
+      box-shadow: 0px 20px 21px -21px rgba(20, 23, 26, 0.41);
+      .recentTweetBody {
+        .userTweet {
+          padding: 10px;
+          display: flex;
+          img {
+            width: 40px;
+            margin: auto 0;
+            border-radius: 100%;
+          }
+          .userName {
+            display: flex;
+            margin: auto 0;
+            p {
+              margin: 0px 10px;
+              font-size: 15px;
+              font-weight: 700;
+            }
+            i {
+              color: $blue;
+            }
+            span {
+              color: $lightGray;
+              font-weight: 700;
+              margin: 0px 10px;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      .tweetDisplay {
+        .tweetDisplayNav {
+          display: flex;
+          margin: 10px 0px;
+          p {
+            color: $darkGray;
+            margin: 0px 10px;
+            justify-content: space-between;
+            &:hover {
+              cursor: pointer;
+            }
+            span {
+              margin: 0px 5px;
+            }
+          }
+          button {
+            color: $darkGray;
+            margin: 0px 10px;
+            font-size: 17px;
+            margin: auto 0;
+            background-color: transparent;
+            border: none;
+            i {
+              font-size: 17px;
+            }
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+        padding-left: 60px;
+        p {
+          line-height: 20px;
+        }
+        .dateTime {
+          margin-top: 10px;
+          p {
+            color: $darkGray;
+            font-weight: 700;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  .article {
+    width: 360px;
+    margin: 5px;
+    .search {
+      border-radius: 20px;
+      align-items: center;
+      display: flex;
+      background-color: $white;
+      justify-content: center;
+      -webkit-box-shadow: 0px 20px 21px -21px rgba(20, 23, 26, 0.41);
+      -moz-box-shadow: 0px 20px 21px -21px rgba(20, 23, 26, 0.41);
+      box-shadow: 0px 20px 21px -21px rgba(20, 23, 26, 0.41);
+      .input {
+        padding: 10px;
+        input {
+          border: none;
+          width: 250px;
+          height: 50px;
+          font-size: 17px;
+          padding: 5px;
+        }
+        i {
+          padding: 10px;
+          background-color: $blue;
+          border-radius: 10px;
+          color: $white;
+        }
+      }
+    }
+    .divisionText {
+      margin: 30px 10px;
+      display: flex;
+      justify-content: space-between;
+      p {
+        color: $black;
+        font-weight: 700;
+      }
+      span {
+        font-size: 13px;
+        margin: auto 0;
+        color: $blue;
+        font-weight: 700;
+        &:hover {
+          color: $hover;
+          cursor: pointer;
+        }
+      }
+    }
+    .trendings {
+      .trendingArticle {
+        .article1 {
+          -webkit-box-shadow: 0px 20px 21px -21px rgba(20, 23, 26, 0.41);
+          -moz-box-shadow: 0px 20px 21px -21px rgba(20, 23, 26, 0.41);
+          box-shadow: 0px 20px 21px -21px rgba(20, 23, 26, 0.41);
+          background-color: $white;
+          padding: 10px;
+          border-radius: 10px;
+          display: flex;
+          margin-bottom: 15px;
+          .image {
+            margin: auto 0;
+            img {
+              width: 75px;
+              border-radius: 20px;
+            }
+          }
+          .text {
+            margin: auto 0;
+            padding: 5px;
+            span {
+              font-size: 13px;
+              color: $darkGray;
+            }
+            p {
+              font-size: 15px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}

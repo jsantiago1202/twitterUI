@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f5f8fa;
+}
+
+.container {
+  padding: 10px;
+  height: 100vh;
+  width: 1080px;
+  margin: 0 auto;
+  display: flex;
+}
+.container .sideNav {
+  text-align: center;
+  width: 120px;
+  padding: 10px;
+  border-radius: 40px;
+  margin: 5px;
+  background-color: #1da1f2;
+  color: #f5f8fa;
+}
+.container .sideNav i {
+  display: block;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 20px;
+  margin: 20px 0px;
+}
+.container .sideNav i:hover {
+  background-color: #58bffe;
+}
+.container .center {
+  width: 600px;
+  margin: 5px;
+}
+.container .center .tweetBox {
+  box-shadow: 0px 20px 21px -21px rgba(20, 23, 26, 0.41);
+  border-radius: 40px;
+  padding: 10px;
+  background-color: #fff;
+}
+.container .center .tweetBox .tweetBoxTextArea {
+  justify-content: center;
+  display: flex;
+}
+.container .center .tweetBox .tweetBoxTextArea .userImage {
+  display: flex;
+}
+.container .center .tweetBox .tweetBoxTextArea .userImage img {
+  width: 50px;
+  margin: auto 0;
+  border-radius: 100%;
+}
+.container .center .tweetBox .tweetBoxTextArea .tweetInput textarea {
+  resize: none;
+  width: 500px;
+  padding: 10px;
+  height: 75px;
+  font-size: 20px;
+  margin: 10px 10px;
+  border: none;
+}
+.container .center .tweetBox .tweetBoxNavigation {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .center .tweetBox .tweetBoxNavigation .tweetBoxNavigationIcons {
+  margin: auto 0;
+}
+.container .center .tweetBox .tweetBoxNavigation .tweetBoxNavigationIcons i {
+  margin: 0 10px;
+  color: #aab8c2;
+  font-size: 20px;
+}
+.container .center .tweetBox .tweetBoxNavigation .tweetBoxNavigationIcons i:hover {
+  color: #1da1f2;
+}
+.container .center .tweetBox .tweetBoxNavigation .tweetBoxNavigationButton button {
+  background-color: #1da1f2;
+  border: none;
+  width: 100px;
+  height: 40px;
+  color: #f5f8fa;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.container .center .tweetBox .tweetBoxNavigation .tweetBoxNavigationButton button:hover {
+  background-color: #58bffe;
+}
+.container .center .divisionText {
+  margin: 15px 10px;
+}
+.container .center .divisionText p {
+  color: #14171a;
+  font-weight: 700;
+}
+.container .center .showRecentTweet {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 40px;
+  box-shadow: 0px 20px 21px -21px rgba(20, 23, 26, 0.41);
+}
+.container .center .showRecentTweet .recentTweetBody .userTweet {
+  padding: 10px;
+  display: flex;
+}
+.container .center .showRecentTweet .recentTweetBody .userTweet img {
+  width: 40px;
+  margin: auto 0;
+  border-radius: 100%;
+}
+.container .center .showRecentTweet .recentTweetBody .userTweet .userName {
+  display: flex;
+  margin: auto 0;
+}
+.container .center .showRecentTweet .recentTweetBody .userTweet .userName p {
+  margin: 0px 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.container .center .showRecentTweet .recentTweetBody .userTweet .userName i {
+  color: #1da1f2;
+}
+.container .center .showRecentTweet .recentTweetBody .userTweet .userName span {
+  color: #aab8c2;
+  font-weight: 700;
+  margin: 0px 10px;
+  font-size: 13px;
+}
+.container .center .showRecentTweet .tweetDisplay {
+  padding-left: 60px;
+}
+.container .center .showRecentTweet .tweetDisplay .tweetDisplayNav {
+  display: flex;
+  margin: 10px 0px;
+}
+.container .center .showRecentTweet .tweetDisplay .tweetDisplayNav p {
+  color: #657786;
+  margin: 0px 10px;
+  justify-content: space-between;
+}
+.container .center .showRecentTweet .tweetDisplay .tweetDisplayNav p:hover {
+  cursor: pointer;
+}
+.container .center .showRecentTweet .tweetDisplay .tweetDisplayNav p span {
+  margin: 0px 5px;
+}
+.container .center .showRecentTweet .tweetDisplay .tweetDisplayNav button {
+  color: #657786;
+  margin: 0px 10px;
+  font-size: 17px;
+  margin: auto 0;
+  background-color: transparent;
+  border: none;
+}
+.container .center .showRecentTweet .tweetDisplay .tweetDisplayNav button i {
+  font-size: 17px;
+}
+.container .center .showRecentTweet .tweetDisplay .tweetDisplayNav button:hover {
+  cursor: pointer;
+}
+.container .center .showRecentTweet .tweetDisplay p {
+  line-height: 20px;
+}
+.container .center .showRecentTweet .tweetDisplay .dateTime {
+  margin-top: 10px;
+}
+.container .center .showRecentTweet .tweetDisplay .dateTime p {
+  color: #657786;
+  font-weight: 700;
+  font-size: 13px;
+}
+.container .article {
+  width: 360px;
+  margin: 5px;
+}
+.container .article .search {
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  box-shadow: 0px 20px 21px -21px rgba(20, 23, 26, 0.41);
+}
+.container .article .search .input {
+  padding: 10px;
+}
+.container .article .search .input input {
+  border: none;
+  width: 250px;
+  height: 50px;
+  font-size: 17px;
+  padding: 5px;
+}
+.container .article .search .input i {
+  padding: 10px;
+  background-color: #1da1f2;
+  border-radius: 10px;
+  color: #fff;
+}
+.container .article .divisionText {
+  margin: 30px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .article .divisionText p {
+  color: #14171a;
+  font-weight: 700;
+}
+.container .article .divisionText span {
+  font-size: 13px;
+  margin: auto 0;
+  color: #1da1f2;
+  font-weight: 700;
+}
+.container .article .divisionText span:hover {
+  color: #58bffe;
+  cursor: pointer;
+}
+.container .article .trendings .trendingArticle .article1 {
+  box-shadow: 0px 20px 21px -21px rgba(20, 23, 26, 0.41);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 15px;
+}
+.container .article .trendings .trendingArticle .article1 .image {
+  margin: auto 0;
+}
+.container .article .trendings .trendingArticle .article1 .image img {
+  width: 75px;
+  border-radius: 20px;
+}
+.container .article .trendings .trendingArticle .article1 .text {
+  margin: auto 0;
+  padding: 5px;
+}
+.container .article .trendings .trendingArticle .article1 .text span {
+  font-size: 13px;
+  color: #657786;
+}
+.container .article .trendings .trendingArticle .article1 .text p {
+  font-size: 15px;
+  font-weight: 700;
+}/*# sourceMappingURL=home.css.map */

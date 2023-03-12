@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sideNav">
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-comment"></i>
+        <i class="fa-solid fa-bookmark"></i>
+        <i class="fa-solid fa-person"></i>
+        <i class="fa-solid fa-sun" onclick="nightMode(this)"></i>
+        <div class="logOut">
+          <i class="fa-solid fa-right-from-bracket"></i>
+        </div>
+      </div>
+      <div class="center">
+        <div class="tweetBox">
+          <form>
+            <div class="tweetBoxTextArea">
+              <div class="userImage">
+                <img
+                  src="../images/fa0c05778206cb2b2dddf89267b7a31c.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="tweetInput">
+                <textarea
+                  name=""
+                  cols="30"
+                  rows="10"
+                  placeholder="what's happening?"
+                  id="tweetValue"
+                ></textarea>
+              </div>
+            </div>
+            <div class="tweetBoxNavigation">
+              <div class="tweetBoxNavigationIcons">
+                <i class="fa-regular fa-image"></i>
+                <i class="fa-solid fa-square-poll-vertical"></i>
+                <i class="fa-solid fa-face-smile"></i>
+                <i class="fa-solid fa-calendar-days"></i>
+              </div>
+              <div class="tweetBoxNavigationButton">
+                <button type="submit">Tweet</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="divisionText">
+          <p>Recent Tweets</p>
+        </div>
+        <div class="showRecentTweet"></div>
+      </div>
+      <div class="article">
+        <div class="search">
+          <div class="input">
+            <input type="text" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="divisionText">
+          <p>What's Trending</p>
+          <span>See All</span>
+        </div>
+        <div class="trendings">
+          <div class="trendingArticle">
+            <div class="article1">
+              <div class="image">
+                <img
+                  src="../images/71c6413dce81588678199e254110aa3c.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="text">
+                <span>Awesomeness</span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="article1">
+              <div class="image">
+                <img
+                  src="../images/71c6413dce81588678199e254110aa3c.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="text">
+                <span>Awesomeness</span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="article1">
+              <div class="image">
+                <img
+                  src="../images/71c6413dce81588678199e254110aa3c.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="text">
+                <span>Awesomeness</span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divisionText">
+          <p>Who to Follow</p>
+          <span>See All</span>
+        </div>
+        <div class="trendings">
+          <div class="trendingArticle">
+            <div class="article1">
+              <div class="image">
+                <img
+                  src="../images/c8604ad94aa73bb4a480a8bf34cf2fd4.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="text">
+                <span>@Eren</span>
+                <p>Eren Jaeger</p>
+              </div>
+              <div class="text">
+                <i class="fa-solid fa-square-plus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
